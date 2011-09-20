@@ -1,24 +1,24 @@
-"solarized stuff
-"call pathogen#runtime_append_all_bundles()
-"syntax enable
-"set background=light
-"colorscheme solarized
+call pathogen#runtime_append_all_bundles()
 
-" disable vi compatibility (emulation of old bugs)
-set nocompatible
+let mapleader=","        " change mapleader from \ to ,
+let NERDTreeShowHidden=1 " Show hidden files in NERDTree
 
-"show line numbers
-set number
-"tabstop = 4, stoptapstop = 4, shiftwidth = 4, expandtab
+set nocompatible         " disable vi compatibility (emulation of old bugs)
+set number               " show line numbers
 set smartindent
 set autoindent
-set ts=4 sts=4 sw=4 expandtab
+set ts=4 sts=4 sw=4 expandtab " tabstop = 4, stoptapstop = 4, shiftwidth = 4, expandtab
+set incsearch            " The following lets searches be incremental. /sec instead of /section
+set linebreak            " wordwrapping at spaces not in middle of words
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
+set pastetoggle=<F2>     " Paste large amount of text with F2 to avoid autoindent
 
-"enable spellchecker
-"set spell
+set anti gfn=Inconsolata\ 11,\ Envy\ Code\ R\ 10    " set editor font
 
-"The following lets searches be incremental.  So in normal mode, /sec will go to the first 'section', for example.  I don't have to type /section for that:
-set incsearch
-
-"wordwrapping at spaces not in middle of words
-set linebreak
+"--MAPPINGS---
+nmap <silent> <C-D> :NERDTreeToggle<CR>             " map Ctrl+D to :NERDTreeToggle
