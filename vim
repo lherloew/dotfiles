@@ -1,1 +1,0 @@
-/home/lasse/.vim
