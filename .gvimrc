@@ -1,6 +1,6 @@
 "solarized stuff
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 
 " wrap lines at 120 chars. 80 is somewhat antiquated with nowadays displays.
