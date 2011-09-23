@@ -3,7 +3,7 @@ syntax enable
 set background=light
 colorscheme solarized
 
-" wrap lines at 120 chars. 80 is somewhat antiquated with nowadays displays.
+" wrap lines at 100 chars. 80 is somewhat antiquated with nowadays displays.
 set textwidth=100
 
 "set height of gvim window

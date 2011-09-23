@@ -15,7 +15,7 @@ set autoindent                  " Do dumb autoindentation when no filetype is se
 set ts=3 sts=3 sw=3 expandtab   " set indentation to use 3 spaces for tab
 set linebreak                   " wordwrapping at spaces not in middle of words
 set listchars=tab:▸\ ,eol:¬     " pretty invisible chars
-set anti gfn=Inconsolata\ 12    " set editor font
+set anti gfn=Monospace\ 10      " set editor font
 
 set pastetoggle=<F2>            " Paste large amount of text with F2 to avoid autoindent
 
