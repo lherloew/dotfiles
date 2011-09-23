@@ -33,14 +33,8 @@ nmap <leader>l :set list!<CR>   " , + l shows invisible chars
 nmap <leader>o :MRU<CR>         " , + o opens recent files list
 nmap <leader>w :set wrap!<CR>   " , + w toggle word wrap
 
-" TODO test this
-nmap <D-[> <<
-nmap <D-]> >>
-vmap <D-[> <gv
-vmap <D-]> >gv
-
 " NERDTree
-nmap <C-D> :NERDTreeToggle<CR> " map Ctrl+D to :NERDTreeToggle
+nmap <leader>n :NERDTreeToggle<CR> " , + n  toggles NERDTree
 let NERDTreeShowHidden=1       " Show hidden files in NERDTree
 
 """" Backups/Swap Files
@@ -50,7 +44,7 @@ if ! len(glob("~/.backup/"))
 endif
 
 set writebackup                " Make a backup of the original file when writing
-set backup                     " and don't delete it after a succesful write.
+set backup                     " and don't delete it after a successful write.
 set backupskip=                " There are no files that shouldn't be backed up.
 set updatetime=2000            " Write swap files after 2 seconds of inactivity.
 set backupext=.bak             " Backup for "file" is "file~"
@@ -61,4 +55,11 @@ set directory^=~/.backup//     " Swap files are also written to ~/.backup, too.
 " the swap file name will be built from the complete path to the file with all
 " path separators substituted to percent '%' signs.  This will ensure file
 " name uniqueness in the preserve directory.
+
+"""" Autocommands
+" Source the vimrc and gvimrc files after saving them, ie. instant changes
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+  autocmd bufwritepost .gvimrc source $MYGVIMRC
+endif
 

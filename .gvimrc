@@ -12,7 +12,7 @@ set lines=40
 "set width
 set columns=100
 
-"enable spellchecker
+"enable spell checker
 set spell
 
 "set guioptions-=m  "remove menu bar
