@@ -46,7 +46,7 @@ endif
 set writebackup                " Make a backup of the original file when writing
 set backup                     " and don't delete it after a successful write.
 set backupskip=                " There are no files that shouldn't be backed up.
-set updatetime=2000            " Write swap files after 2 seconds of inactivity.
+set updatetime=4000            " Write swap files after 4 seconds of inactivity.
 set backupext=.bak             " Backup for "file" is "file~"
 set backupdir^=~/.backup       " Backups are written to ~/.backup/ if possible.
 set directory^=~/.backup//     " Swap files are also written to ~/.backup, too.
