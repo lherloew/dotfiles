@@ -7,13 +7,14 @@ set visualbell                  " don't beep
 set noerrorbells                " don't beep
 set history=1000                " remember more commands and search history
 set undolevels=1000             " use many muchos levels of undo
+set clipboard=unnamedplus,autoselect " Use + register (X Window clipboard) as unnamed register
 
 """" Editor
 set number                      " show line numbers
 set smartindent                 " indent
 set autoindent                  " Do dumb autoindentation when no filetype is set
 set ts=3 sts=3 sw=3 expandtab   " set indentation to use 3 spaces for tab
-set linebreak                   " wordwrapping at spaces not in middle of words
+set linebreak                   " word wrapping at spaces not in middle of words
 set listchars=tab:▸\ ,eol:¬     " pretty invisible chars
 set anti gfn=Monospace\ 10      " set editor font
 

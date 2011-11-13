@@ -7,10 +7,10 @@ colorscheme solarized
 set textwidth=100
 
 "set height of gvim window
-set lines=40
+set lines=50
 
 "set width
-set columns=100
+set columns=110
 
 "enable spell checker
 set spell
